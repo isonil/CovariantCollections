@@ -1,5 +1,5 @@
 # About
-C# List wrapper which can be cast to ILists of any subtype
+C# type-safe List\<T> wrapper which can be cast to ILists of any subtype
 
 The goal was to create a collection which could be cast to any collection whose elements inherit from the main type.
 
