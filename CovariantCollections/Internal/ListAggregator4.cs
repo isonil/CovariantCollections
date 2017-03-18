@@ -4,22 +4,19 @@ using System.Collections.Generic;
 namespace CovariantCollections.Internal
 {
     
-public abstract class ListAggregator<T1, T2, T3, T4> : ListAggregator<T1, T2, T3>, IList<T4>, ICollection<T4>, IReadOnlyList<T4>, IReadOnlyCollection<T4>, IEnumerable<T4>, IEnumerable
+public abstract class ListAggregator<T1, T2, T3, T4> : ListAggregator<T1, T2, T3>, IList<T4>, ICollection<T4>, IEnumerable<T4>, IEnumerable
     where T2 : T1
     where T3 : T2
     where T4 : T3
 {
     bool ICollection<T4>.IsReadOnly { get { return T4_IsReadOnly; } }
     int ICollection<T4>.Count { get { return T4_Count; } }
-    int IReadOnlyCollection<T4>.Count { get { return T4_Count; } }
 
     T4 IList<T4>.this[int index]
     {
         get { return T4_Get(index); }
         set { T4_Set(index, value); }
     }
-
-    T4 IReadOnlyList<T4>.this[int index] { get { return T4_Get(index); } }
 
     protected abstract bool T4_IsReadOnly { get; }
     protected abstract int T4_Count { get; }

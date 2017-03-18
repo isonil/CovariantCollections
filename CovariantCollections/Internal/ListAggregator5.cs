@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace CovariantCollections.Internal
 {
     
-public abstract class ListAggregator<T1, T2, T3, T4, T5> : ListAggregator<T1, T2, T3, T4>, IList<T5>, ICollection<T5>, IReadOnlyList<T5>, IReadOnlyCollection<T5>, IEnumerable<T5>, IEnumerable
+public abstract class ListAggregator<T1, T2, T3, T4, T5> : ListAggregator<T1, T2, T3, T4>, IList<T5>, ICollection<T5>, IEnumerable<T5>, IEnumerable
     where T2 : T1
     where T3 : T2
     where T4 : T3
@@ -12,15 +12,12 @@ public abstract class ListAggregator<T1, T2, T3, T4, T5> : ListAggregator<T1, T2
 {
     bool ICollection<T5>.IsReadOnly { get { return T5_IsReadOnly; } }
     int ICollection<T5>.Count { get { return T5_Count; } }
-    int IReadOnlyCollection<T5>.Count { get { return T5_Count; } }
 
     T5 IList<T5>.this[int index]
     {
         get { return T5_Get(index); }
         set { T5_Set(index, value); }
     }
-
-    T5 IReadOnlyList<T5>.this[int index] { get { return T5_Get(index); } }
 
     protected abstract bool T5_IsReadOnly { get; }
     protected abstract int T5_Count { get; }

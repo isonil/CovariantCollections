@@ -32,7 +32,7 @@ class Program
         Console.WriteLine("Test4 Count: " + l.Count);
     }
 
-    private static void Test5(IReadOnlyCollection<C2> r)
+    private static void Test5(IList<C2> r)
     {
         Console.WriteLine("Test5 Count: " + r.Count);
     }

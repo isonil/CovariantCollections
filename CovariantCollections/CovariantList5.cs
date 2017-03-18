@@ -16,7 +16,7 @@ namespace CovariantCollections
 /// <typeparam name="T3">Any type which inherits from T4.</typeparam>
 /// <typeparam name="T4">Any type which inherits from T5.</typeparam>
 /// <typeparam name="T5">The main type.</typeparam>
-public class CovariantList<T1, T2, T3, T4, T5> : Internal.ListAggregator<T1, T2, T3, T4, T5>, IList<T5>, ICollection<T5>, IList, ICollection, IReadOnlyList<T5>, IReadOnlyCollection<T5>, IEnumerable<T5>, IEnumerable
+public class CovariantList<T1, T2, T3, T4, T5> : Internal.ListAggregator<T1, T2, T3, T4, T5>, IList<T5>, ICollection<T5>, IList, ICollection, IEnumerable<T5>, IEnumerable
     where T2 : T1
     where T3 : T2
     where T4 : T3

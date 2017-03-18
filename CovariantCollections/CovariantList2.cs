@@ -13,7 +13,7 @@ namespace CovariantCollections
 /// </summary>
 /// <typeparam name="T1">Any type which inherits from T2.</typeparam>
 /// <typeparam name="T2">The main type.</typeparam>
-public class CovariantList<T1, T2> : Internal.ListAggregator<T1, T2>, IList<T2>, ICollection<T2>, IList, ICollection, IReadOnlyList<T2>, IReadOnlyCollection<T2>, IEnumerable<T2>, IEnumerable
+public class CovariantList<T1, T2> : Internal.ListAggregator<T1, T2>, IList<T2>, ICollection<T2>, IList, ICollection, IEnumerable<T2>, IEnumerable
     where T2 : T1
 {
     private readonly List<T2> list;
