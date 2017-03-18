@@ -58,7 +58,7 @@ Test1(myCollection);
 Test2(myCollection);
 ```
 
-CovariantList has the same methods as the List of the last given type (e.g. CovariantList<T1, T2, T3, T4, T5> has the same methods as List<T5>). However, it can be cast to an IList or ICollection of any of the given types.
+CovariantList has the same methods as the List of the last given type (e.g. CovariantList\<T1, T2, T3, T4, T5> has the same methods as List\<T5>). However, it can be cast to an IList or ICollection of any of the given types.
 
-For example CovariantList<T1, T2, T3> can be cast to:
-List<T3>, IList<T3>, IList<T1>, ICollection<T2>, IReadOnlyList<T3>, IEnumerable<T1>, and so on.
+For example CovariantList\<T1, T2, T3> can be cast to:
+List\<T3>, IList\<T3>, IList\<T1>, ICollection\<T2>, IReadOnlyList\<T3>, IEnumerable\<T1>, and so on.
