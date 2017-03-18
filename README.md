@@ -1,3 +1,6 @@
+# .NET
+Note: from .NET 4.5 onwards there is IReadOnlyList\<out T> and IReadOnlyCollection\<out T> which are both covariant, so there's no reason to use this project. This project is aimed at older .NET versions.
+
 # About
 C# type-safe List\<T> wrapper which can be cast to ILists of any subtype
 
