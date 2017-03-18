@@ -62,3 +62,25 @@ CovariantList has the same methods as the List of the last given type (e.g. Cova
 
 For example CovariantList\<T1, T2, T3> can be cast to:
 List\<T3>, IList\<T3>, IList\<T1>, ICollection\<T2>, IReadOnlyList\<T3>, IEnumerable\<T1>, and so on.
+
+Another example:
+```C#
+class A { }
+class B : A { }
+class C : B { }
+
+IList<C> list = new CovariantList<A, B, C>();
+Test(list);
+
+void Test(IList<C> list)
+{
+  Test1((IList<A>)list); // OK
+  Test2((IList<B>)list); // OK
+}
+void Test1(IList<A> list)
+{
+}
+void Test2(IList<B> list)
+{
+}
+```
