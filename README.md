@@ -80,9 +80,11 @@ void Test(IList<C> list)
   Test1((IList<A>)list); // OK
   Test2((IList<B>)list); // OK
 }
+
 void Test1(IList<A> list)
 {
 }
+
 void Test2(IList<B> list)
 {
 }
