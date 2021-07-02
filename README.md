@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/8492408/124278955-339cb100-db47-11eb-8d97-9bb068dbf31c.png">
+  <img src="https://user-images.githubusercontent.com/8492408/124279156-72326b80-db47-11eb-88c9-5748704acaee.png">
 </p>
 
 # .NET
