@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/8492408/124278955-339cb100-db47-11eb-8d97-9bb068dbf31c.png">
+</p>
+
 # .NET
 Note: from .NET 4.5 onwards there is IReadOnlyList\<out T> and IReadOnlyCollection\<out T> which are both covariant, so there's no reason to use this project. This project is aimed at older versions of .NET
 
